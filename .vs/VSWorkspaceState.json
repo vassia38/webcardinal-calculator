@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\assets\\css",
+    "\\pages",
+    "\\scripts",
+    "\\scripts\\controllers"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\scripts\\controllers\\AboutController.js",
   "PreviewInSolutionExplorer": false
 }

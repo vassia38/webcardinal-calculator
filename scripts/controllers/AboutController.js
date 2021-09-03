@@ -25,7 +25,7 @@ class AboutController extends WebcController {
             },
             {
                 html: "Item 3",
-            },
+            }
         ],
         itemsTwo: [
             {
@@ -37,23 +37,7 @@ class AboutController extends WebcController {
                 content: {
                     text: "Description 1",
                 },
-            },
-            {
-                title: {
-                    text: "Title 2",
-                },
-                content: {
-                    text: "Description 2",
-                },
-            },
-            {
-                title: {
-                    html: 'Title 3 <a href="/more">...read more</a>',
-                },
-                content: {
-                    text: "Description 3",
-                },
-            },
+            }
         ],
         itemsThree: [
             {
@@ -105,7 +89,7 @@ class AboutController extends WebcController {
 
         console.log("Hello World!");
 
-        this.setModel(this.getModel());
+        this.model= this.getModel();
 
         console.log({
             proxy: this.model,

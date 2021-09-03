@@ -3,11 +3,13 @@
   "pagesFallback": {
     "name": "Home"
   },
+  "translations": false,
   "pages": [
     {
       "path": "/",
       "name": "Homepage",
-      "src": "home.html"
+      "src": "home.html",
+      "skin": "my skin"
     },
     {
       "name": "About"
@@ -32,12 +34,6 @@
     {
       "name": "Contact",
       "tag": "contact"
-    },
-    {
-      "name": "PSK Styles",
-      "tag": "faq",
-      "src": "https://privatesky.xyz/pages/faq.html"
     }
-  ],
-  "theme": "clear-sky-theme"
+  ]
 }

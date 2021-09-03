@@ -21,10 +21,10 @@
     </div>
 
     <h1>webc-for example 2</h1>
-    <div data-model="@itemsTwo">
+    <div data-for="@itemsTwo">
         <article class="article">
-            <h4 data-model="@title" class="article"></h4>
-            <p data-model="@content"></p>
+            <h4  class="article">{{ @title.text }}</h4>
+            <p>{{@content.text}}</p>
         </article>
     </div>
 

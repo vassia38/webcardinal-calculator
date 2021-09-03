@@ -1,3 +1,34 @@
-<psk-page title="Home">
-    Hello World!
-</psk-page>
+<webc-container controller="HomeController">
+
+    <h1>My Calculator</h1>
+    <psk-layout columns="2" gap="5px" class="calculator-wrapper">
+        <div class="col1">
+            <div class="screen-wrapper" data-view-model="@displayedNum">
+                {{@displayedNum.text}}
+            </div>
+            <psk-layout class="board-wrapper" columns="4" rows="5" gap="5px" data-tag="my-board">
+                <button data-operator="add" data-tag="operator">+</button>
+                <button data-operator="subtract" data-tag="operator">-</button>
+                <button data-operator="multiply" data-tag="operator">*</button>
+                <button data-operator="divide" data-tag="operator">/</button>
+
+                <psk-layout-item column-start="1" column-end="4" row-start="2" row-end="6">
+                    <psk-layout columns="3" rows="3" gap="5px">
+                        <button>7</button><button>8</button><button>9</button>
+                        <button>4</button><button>5</button><button>6</button>
+                        <button>1</button><button>2</button><button>3</button>
+                        <button>0</button>
+                        <button data-tag="decimal">.</button>
+                        <button data-tag="clear" style="color:red">C</button>
+                    </psk-layout>
+                </psk-layout-item>
+                <psk-layout-item row-start="2" row-end="6">
+                    <button data-tag="calculate" style="height:100%; width:100%">=</button>
+                </psk-layout-item>
+            </psk-layout>
+        </div>
+        <div class="history-wrapper" data-for="@historyList">
+            <p data-tag="entry">{{@text}}</p>
+        </div>
+    </psk-layout>
+</webc-container>
