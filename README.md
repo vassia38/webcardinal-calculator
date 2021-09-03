@@ -1,37 +1,14 @@
 ## Description
 
-Application template that uses WebCardinal.
+Calculator app created using WebCardinal.
 
 ## How to make it run on your side
 
 ### Clone it
 
 ```
-git clone https://github.com/webcardinal/webcardinal-app-starter my-application
+git clone https://github.com/vassia38/webcardinal-calculator/
 ```
-
-### Install components of your Application
-
-```
-cd my-application
-npm install
-```
-
-Now you should see a folder: __`.dev`__.
-
-In this folder you have the WebCardinal bundle and other dependecies.
-
-### Generate the distribution
-
-```bash
-# production ready distribution
-npm run build
-
-# development usage
-# npm run dev 
-```
-
-The default output target is __`webcardinal`__ directory.
 
 ### Run local server
 
